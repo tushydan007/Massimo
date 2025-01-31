@@ -13,14 +13,12 @@
 
 // export default CountDown
 
-
 // WITHOUT A LIBRARY
-"use client"
+"use client";
 import React, { useState, useEffect } from "react";
 
 const CountDown = () => {
-  
-  let difference = +new Date(`10/10/2023`) - +new Date();
+  const difference = +new Date(`07/05/2025`) - +new Date();
   const [delay, setDelay] = useState(difference);
 
   const d = Math.floor(difference / (1000 * 60 * 60 * 24));
